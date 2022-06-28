@@ -99,14 +99,35 @@ button{
     font-weight: bold;
     border: 2px solid #9427fe;
     background: transparent; 
-    color: #ff83ff; 
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
     
 }
 
 button a{
     color: #ff83ff;
     text-decoration: none;
+}
+
+span{
+    
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span{
+    width: 100%;
+}
+
+button:hover{
+    border: none;
 }
 
 .grilla{
